@@ -11,10 +11,6 @@ export default Ember.Controller.extend({
         })
       })
     },
-    saveConcepto(){
-      let concepto = this.get('store').createRecord('concepto', {
-        factura: this.get(factura)
-      })
-    }
+
   }
 });

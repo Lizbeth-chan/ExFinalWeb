@@ -1,1 +1,15 @@
-{{yield}}
+<form {{action 'save' on='submit'}}>
+  <table>
+    <tbody>
+        <tr>
+          <th>  Cantidad {{input type='text' value=model.cantidad}}</th>
+          <th>Descripcion {{input type='text' value=model.descripcion}}</th>
+          <th>Precio {{input type='text' value=model.precio}}</th>
+          <th>Importe {{input type='text' value=model.serie}} <!--Aqui deberia ir el computed--></th>
+          <th>Descuento {{input type='text' value=model.descuento}}</th>
+        </tr>
+    </tbody>
+  </table>
+  <hr>
+    <button class="btn btn-success">Guardar</button>
+</form>
