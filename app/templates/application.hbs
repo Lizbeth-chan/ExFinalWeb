@@ -1,5 +1,14 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="navbar fixed-top navbar-dark bg-dark text-white">
+  <h1 style="color:orange">Facturas</h1>
 
+
+    <ul class="nav justify-content-end nav-pills">
+      <li class="nav-item active">
+        {{#link-to 'inicio' class='nav-link'}}Inicio{{/link-to}}
+        </li>
+      <li class="nav-item">
+        {{#link-to 'lista-facturas' class='nav-link'}}Facturas{{/link-to}}
+      </li>
+    </ul>
+</nav>
 {{outlet}}
