@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('inicio', {path: '/'});
   this.route('lista-facturas');
   this.route('nueva-factura');
-  this.route('nuevo-concepto');
+  this.route('nuevo-concepto', {path: 'nuevo-concepto/:id'});
 });
 
 export default Router;

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  TotalFactura(){
-    // let total = Ember.computed() 
+  model(){
+    return this.store.findAll('factura');
   }
 });

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(){
-    return this.store.createRecord('concepto');
+  model(params){
+    return this.get('store').find('factura', params.id).createRecord('concepto');
   }
 });
