@@ -3,12 +3,9 @@ Serie {{input type='text' value=model.serie}}
 Folio {{input type='text' value=model.folio}}
 Fecha {{input type='date' value=model.folio}}
 
-{{#link-to 'nuevo-concepto' model}}<button class="btn btn-danger">Agregar concepto</button> {{/link-to}}
+<button {{action 'guardarConcepto'}}class="btn btn-danger">Agregar concepto</button>
 <hr>
 <table>
-    <thead>
-
-    </thead>
     <tbody>
       {{#each factura.conceptos as |c|}}
       {{form-conceptos concepto=c}}
