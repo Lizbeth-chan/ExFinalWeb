@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.createRecord('factura');
+    return this.store.createRecord('factura', {});
   }
 });

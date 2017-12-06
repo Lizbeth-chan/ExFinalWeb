@@ -1,15 +1,14 @@
-<form {{action 'save' on='submit'}}>
+<form {{action 'save' concepto on='submit'}}>
   <table>
     <tbody>
         <tr>
-          <th>  Cantidad {{input type='text' value=model.cantidad}}</th>
-          <th>Descripcion {{input type='text' value=model.descripcion}}</th>
-          <th>Precio {{input type='text' value=model.precio}}</th>
-          <th>Importe {{input type='text' value=model.serie}} <!--Aqui deberia ir el computed--></th>
-          <th>Descuento {{input type='text' value=model.descuento}}</th>
+          <th>Cantidad {{input type='text' value=concepto.cantidad}}</th>
+          <th>Descripcion {{input type='text' value=concepto.descripcion}}</th>
+          <th>Precio {{input type='text' value=concepto.precio}}</th>
+          <th>Importe {{input type='text' value=concepto.serie}} <!--Aqui deberia ir el computed--></th>
+          <th>Descuento {{input type='text' value=concepto.descuento}}</th>
         </tr>
     </tbody>
   </table>
   <hr>
-    <button class="btn btn-success">Guardar</button>
 </form>

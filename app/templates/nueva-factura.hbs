@@ -1,13 +1,13 @@
-<form {{action 'save' on='submit'}}>
+<form {{action 'save' model on='submit'}}>
 Serie {{input type='text' value=model.serie}}
 Folio {{input type='text' value=model.folio}}
-Fecha {{input type='date' value=model.folio}}
+Fecha {{input type='date' value=model.fecha}}
 
-<button {{action 'guardarConcepto'}}class="btn btn-danger">Agregar concepto</button>
+<button {{action 'guardarConcepto'}} class="btn btn-danger">Agregar concepto</button>
 <hr>
 <table>
     <tbody>
-      {{#each factura.conceptos as |c|}}
+      {{#each model.conceptos as |c|}}
       {{form-conceptos concepto=c}}
       {{/each}}
     </tbody>
